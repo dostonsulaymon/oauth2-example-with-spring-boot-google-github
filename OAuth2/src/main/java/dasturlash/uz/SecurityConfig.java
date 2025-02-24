@@ -28,7 +28,7 @@ public class SecurityConfig {
 
                 .oauth2Login(
                         oauth2Login ->
-                                oauth2Login.defaultSuccessUrl("/hello", true));
+                                oauth2Login.defaultSuccessUrl("http://localhost:3000/dashboard", true));
 
         return http.build();
 
